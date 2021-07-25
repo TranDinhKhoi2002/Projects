@@ -1,0 +1,664 @@
+/* GLOBAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #717171;
+}
+::selection {
+    background-color: #ec7532;
+    color: #fff;
+}
+/* LINE STYLE */
+.line::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 3px;
+    /* CÁCH TRẢI MÀU: 
+        1. Giá trị thứ nhất: hướng trải màu
+            to right: trái qua phải
+            to left: phải qua trái
+            to top: dưới lên trên
+            to bottom: trên xuống dưới
+        2. Giá trị thứ hai: màu bắt đầu
+        3. Giá trị thứ ba: màu kết thúc*/
+    background: linear-gradient(to right, #fbbd61, #ec7532);
+    box-shadow: 0 0 20px 0 #fbbd61;
+    transition: all 0.5s;
+}
+.line:hover::after {
+    width: 100%;
+}
+.line.active::after {
+    width: 100%;
+}
+.section {
+    padding: 75px 0;
+}
+.title {
+    color: #ec7532;
+    font-size: 1.125rem;
+    border-bottom: 1px solid #d8d8d8;
+    letter-spacing: 1.7px;
+    margin-bottom: 40px;
+}
+.title::after {
+    content: "";
+    display: block;
+    background: linear-gradient(to right, #fbbd61, #ec7532);
+    width: 125px;
+    height: 4px;
+    margin-top: 20px;
+}
+.title--white {
+    color: #fff;
+    border-bottom: 1px solid #333;
+}
+
+
+/* HEADER */
+header {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+header p {
+    font-size: 14px;
+    font-weight: 700;
+}
+#movieNavBar .navbar-nav, #movieNavBar--fixed .navbar-nav {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+#movieNavBar .navbar-nav .nav-link, #movieNavBar--fixed .navbar-nav .nav-link {
+    color: #fff;
+    letter-spacing: 3px;
+    line-height: 0.8em;
+    padding: 20px 24px;
+}
+#header-fixed {
+    background-color: #101010;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transform: translate(-50%, -100%);
+    transition: all 0.5s;
+    z-index: 16;
+}
+
+
+
+
+
+
+/* CAROUSEL */
+#movieCarousel {
+    height: 650px;
+}
+#movieCarousel .carousel-inner {
+    height: 100%;
+}
+#movieCarousel .carousel-item {
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+#movieCarousel .carousel-item:first-child {
+    background-image: url(../img/hero-1.jpg);
+}
+#movieCarousel .carousel-item:nth-child(2) {
+    background-image: url(../img/iw_carousel_2.png);
+}
+#movieCarousel .carousel-item:nth-child(3) {
+    background-image: url(../img/hero-3.jpg);
+}
+#movieCarousel .carousel-caption {
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+}
+#movieCarousel .carousel-caption p:first-of-type {
+    color: #fbbd61;
+    font-size: 0.875rem;
+    letter-spacing: 2px;
+    margin: 0;
+    animation-delay: 0.5s;
+}
+#movieCarousel .carousel-caption h2 {
+    font-size: 3.25rem;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+#movieCarousel .carousel-caption p:last-of-type {
+    font-size: 1.125rem;
+    margin-bottom: 20px;
+}
+.movieCarousel__trailer {
+    animation-delay: 0.5s;
+}
+.movieCarousel__trailer>span {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    font-size: 0.8rem;
+    display: inline-block;
+    text-align: center;
+    line-height: 48px;
+    margin-right: 8px;
+}
+.movieCarousel__trailer button {
+    position: relative;
+    padding: 12px 24px;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    font-size: 0.8rem;
+    letter-spacing: 4px;
+    color: #fff;
+    background: linear-gradient(to right, #fbbd61, #ec7532);
+    overflow: hidden;
+}
+.movieCarousel__trailer button::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 110%;
+    height: 100%;
+    background-color: #ec7532;
+    top: 0;
+    left: 0;
+    transform: skewX(30deg) translateX(-110%);
+    transition: 0.5s;
+    z-index: 1;
+}
+.movieCarousel__trailer button:hover::before {
+    transform: skewX(30deg) translateX(-10px);
+}
+.movieCarousel__trailer button:hover {
+    color: #fff;
+}
+.movieCarousel__trailer button:focus {
+    outline: none;
+    box-shadow: 0 0 0 0;
+}
+.movieCarousel__trailer button span {
+    position: relative;
+    z-index: 2;
+}
+#movieCarousel .carousel-indicators {
+    justify-content: flex-start;
+    left: 50%;
+    bottom: 10%;
+    transform: translateX(-50%);
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+#movieCarousel .carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    opacity: 1;
+    background-color: transparent;
+    background-clip: border-box;
+    box-sizing: border-box;
+}
+#movieCarousel .carousel-indicators li.active {
+    background-color: #fff;
+}
+.movieCarousel__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #000, transparent);
+}
+
+
+
+
+
+
+
+
+
+
+
+/* NEWIN */
+.newin__title {
+    text-align: center;
+}
+.newin__title h3 {
+    font-size: 18px;
+    color: #4a4a4a;
+    margin: 1rem 0;
+}
+.newin__title i {
+    color: #fbbd61;
+}
+.newin__img {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.newin__overlay {
+    width: 200%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to bottom, #fbbd61, #ec7532);
+    transform: skewX(30deg) translateX(-150%);
+    opacity: 0.9;
+    transition: all 0.5s;
+}
+.newin__img:hover .newin__overlay {
+    transform: skewX(30deg) translateX(-30%);
+}
+.newin__play {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: 0.5s;
+}
+.newin__img:hover .newin__play {
+    opacity: 1;
+}
+.newin__play a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+    letter-spacing: 4px;
+    margin: 1rem 0;
+}
+.newin__play i{
+    width: 80px;
+    height: 80px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 80px;
+    transform: scale(1);
+    transition: all 0.5s;
+}
+.newin__play i:hover {
+    transform: scale(0.9);
+}
+.newin__play-date {
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* SHOWTIMES */
+.showtimes .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    border: none;
+}
+.showtimes .nav-tabs .nav-link {
+    border: none;
+    padding: 0;
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: #4a4a4a;
+}
+.showtimes .nav-tabs .nav-link span {
+    padding: 15px 30px;
+    display: block;
+}
+.showtimes .nav-tabs .nav-link.active {
+    color: #ec7532;
+}
+.showtimes .nav-tabs .nav-item {
+    margin-bottom: 0;
+}
+.showtimes__row {
+    border-bottom: 1px solid #d8d8d8;
+}
+.showtimes__row:last-child {
+    border-bottom: 0;
+}
+.showtimes__row img {
+    border-radius: 10px;
+}
+.showtimes__row div p:first-of-type {
+    font-size: 14px;
+    letter-spacing: 2px;
+    color: #ec7532;
+    margin-bottom: 0;
+}
+.showtimes__row h3 {
+    font-size: 24px;
+    font-weight: 300;
+    color: #101010;
+    letter-spacing: 1px;
+}
+.showtimes__row  a {
+    font-size: 12px;
+    letter-spacing: 4px;
+    color: #ec7532;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+.showtimes__row  a:hover {
+    color: #101010;
+}
+.showtimes__running-times {
+    font-size: 12px;
+    letter-spacing: 1.5px;
+    color: #4a4a4a;
+}
+.showtimes__running-times button {
+    font-size: 14px;
+    letter-spacing: 2px;
+    color: #717171;
+    background-color: #d8d8d8;
+}
+.showtimes__mins span:last-child {
+    display: inline-block;
+    width: 33px;
+    height: 33px;
+    line-height: 33px;
+    color: #fff;
+    background-color: #4a4a4a;
+    text-align: center;
+    border-radius: 50%;
+    font-weight: 700;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* COMING SOON */
+.coming-soon {
+    /* background-image: url(../img/slide-3.png); */
+    background: #101010 url(../img/slide-3.png);
+    background-size: cover;
+    color: #fff;
+}
+.coming-soon__type {
+    font-size: 14px;
+    color: #ec7532;
+    letter-spacing: 2px;
+}
+.coming-soon h3 {
+    font-size: 34px;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+.coming-soon__rating > i {
+    color: #fbbd61;
+}
+.coming-soon p {
+    margin: 1rem 0;
+}
+.coming-soon a {
+    font-size: 12px;
+    letter-spacing: 4px;
+    color: #ec7532;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+.coming-soon a:hover {
+    color: #fff;
+}
+.coming-soon__video {
+    position: relative;
+}
+.coming-soon__video i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    line-height: 80px;
+    border: 1px solid #ec7532;
+    border-radius: 50%;
+    font-size: 25px;
+    color: #fff;
+    transition: all 0.5s;
+}
+.coming-soon__video:hover i {
+    transform: translate(-50%, -50%) scale(0.9);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MOVIE LIST */    
+.movie-list {
+    background-color: #101010;
+}
+.movie-list__item {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.movie-list__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #101010;
+    opacity: 0.6;
+    transition: all 0.5s;
+}
+.movie-list__item:hover .movie-list__overlay {
+    opacity: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* CONTACT */
+.contact__content p:first-child {
+    font-size: 23px;
+    color: #4a4a4a;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+.contact__content a {
+    font-size: 46px;
+    color: #fbbd61;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* FOOTER */    
+footer {
+    background-color: #101010;
+}
+footer h3 {
+    font-size: 16px;
+    color: #ec7532;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+footer li {
+    list-style: none;
+}
+footer a {
+    font-size: 13px;
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 1.5px;
+    padding: 3px 0;
+    transition: all 0.5s;
+}
+footer a:hover {
+    color: #fbbd61;
+    text-decoration: none;
+}
+.footer__copyright {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #fff;
+    padding: 15px 0;
+}
+.footer__copyright p {
+    margin-bottom: 0;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* RESPONSIVE */
+@media screen and (max-width: 991.98px) {
+    /* HEADER */
+    header .navbar-brand {
+        max-width: 180px;
+    }
+    header .navbar-brand img {
+        max-width: 100%;
+    }
+    #movieNavBar .navbar-nav .nav-link, #movieNavBar--fixed .navbar-nav .nav-link {
+        font-size: 14px;
+        padding: 20px 12px;
+        letter-spacing: 2px;
+    }
+}
+@media screen and (max-width: 767.98px) {
+    /* GLOBAL */
+    .line.active::after {
+        width: 0;
+    }
+    /* HEADER */
+    header .navbar-toggler {
+        color: #fbbd61;
+    }
+    header .navbar-toggler:focus {
+        outline: none;
+    }
+    #movieNavBar .navbar-nav, #movieNavBar--fixed .navbar-nav {
+        background-color: rgba(0, 0, 0, 0.9);
+        text-align: center;
+    }
+    #movieNavBar .navbar-nav .active .nav-link, #movieNavBar--fixed .navbar-nav .active .nav-link {
+        color: #ec7532;
+        
+    }
+    /* CAROUSEL */
+    #movieCarousel .carousel-caption h2 {
+        font-size: 2.5rem;
+    }
+    /* SHOWTIMES */
+    .showtimes .nav-tabs .nav-link {
+        font-size: 16px;
+    }
+    .showtimes .nav-tabs .nav-link span {
+        padding: 10px 20px;
+    }
+}
+@media screen and (max-width: 575.98px) {
+    .showtimes .nav-tabs .nav-link span {
+        padding: 10px 12px;
+    }
+}
+@media screen and (max-width: 414px) {
+    .showtimes__running-times button.btn {
+        padding: 0.35rem 0.2rem;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .newin__play i {
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+    }
+    .newin__play a {
+        font-size: 12px;
+    }
+    .newin__play-date {
+        font-size: 14px;
+    }
+}

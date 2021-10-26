@@ -1,0 +1,10 @@
+C:\Users\Admin\source\repos\BTH3_TranDinhKhoi_20520224\Bai02\bin\Debug\Bai02.exe.config
+C:\Users\Admin\source\repos\BTH3_TranDinhKhoi_20520224\Bai02\bin\Debug\Bai02.exe
+C:\Users\Admin\source\repos\BTH3_TranDinhKhoi_20520224\Bai02\bin\Debug\Bai02.pdb
+C:\Users\Admin\source\repos\BTH3_TranDinhKhoi_20520224\Bai02\obj\Debug\Bai02.csprojAssemblyReference.cache
+C:\Users\Admin\source\repos\BTH3_TranDinhKhoi_20520224\Bai02\obj\Debug\Bai02.PaintEventForm.resources
+C:\Users\Admin\source\repos\BTH3_TranDinhKhoi_20520224\Bai02\obj\Debug\Bai02.Properties.Resources.resources
+C:\Users\Admin\source\repos\BTH3_TranDinhKhoi_20520224\Bai02\obj\Debug\Bai02.csproj.GenerateResource.cache
+C:\Users\Admin\source\repos\BTH3_TranDinhKhoi_20520224\Bai02\obj\Debug\Bai02.csproj.CoreCompileInputs.cache
+C:\Users\Admin\source\repos\BTH3_TranDinhKhoi_20520224\Bai02\obj\Debug\Bai02.exe
+C:\Users\Admin\source\repos\BTH3_TranDinhKhoi_20520224\Bai02\obj\Debug\Bai02.pdb

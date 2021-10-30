@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Bai02
+namespace Bai06
 {
     static class Program
     {
@@ -16,7 +16,7 @@ namespace Bai02
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new PaintEventForm());
+            Application.Run(new CalculatorForm());
         }
     }
 }

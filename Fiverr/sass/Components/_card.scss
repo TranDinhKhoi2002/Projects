@@ -1,0 +1,55 @@
+.card {
+    border-radius: 0;
+    .card-img-top {
+        border-radius: 0;
+    }
+    .card-body {
+        padding-bottom: $pd-1 - 4;
+        img {
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+        }
+        .card__name {
+            margin-left: $mg-2 + 2;
+            p {
+                margin-bottom: 0;
+                &:first-child {
+                    @include style-text($color-black-0, $fs-0 - 2, $fw-0);
+                }
+                &:last-child {
+                    @include style-text($color-grey-2, $fs-0 - 1, $fw-3);
+                }
+            }
+        }
+        h3 {
+            @include style-text($color-black-0, $fs-0, $fw-2);
+            display: -webkit-box;
+            height: 43px;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: normal;
+            -webkit-line-clamp: 2;
+            line-height: 22px;
+        }
+        .card__rating {
+            @include style-text($color-yellow-0, $fs-0, $fw-2);
+            span {
+                &:last-of-type {
+                    color: $color-grey-4;
+                }
+            }
+        }
+    }
+    .card__option {
+        border-top: 1px solid $color-grey-6;
+        padding: $pd-0 1.25rem;
+        i {
+            color: $color-grey-4;
+        }
+        span {
+            font-size: $fs-0 - 2;
+        }
+    }
+}

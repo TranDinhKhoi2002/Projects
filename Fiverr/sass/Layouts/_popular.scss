@@ -1,0 +1,22 @@
+.popular {
+    margin: $mg-3 0;
+    h2 {
+        display: inline-block;
+    }
+    a {
+        @include style-text($color-blue-0, $fs-3, $fw-1);
+        margin-left: $mg-2;
+        &:hover {
+            text-decoration: none;
+        }
+    }
+    @media screen and (max-width: 510px) {
+        h2 {
+            display: block;
+            margin-bottom: $mg-2;
+        }
+        a {
+            margin-left: 0;
+        }
+    }
+}

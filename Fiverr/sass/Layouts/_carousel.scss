@@ -1,0 +1,46 @@
+.section__content {
+    width: 95%;
+    margin: 0 auto;
+    h2 {
+        @include style-text($color-black-1, $fs-3, $fw-1);
+        margin: $mg-3 0 $mg-3 + 3;
+    }
+    .section-carousel {
+        .owl-nav {
+            position: absolute;
+            display: block;
+            width: 100%;
+            top: 34%;
+            button {
+                width: 42px;
+                height: 42px;
+                line-height: 42px;
+                border-radius: 50%;
+                background-color: $color-white-0;
+                box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
+                font-size: $fs-2;
+                position: absolute;
+                outline: none;
+                &:hover {
+                    background-color: $color-white-0;
+                    color: $color-grey-0;
+                }
+            }
+            .owl-prev {
+                left: -16px;
+            }
+            .owl-next {
+                right: -16px;
+            }
+        }
+        .owl-dots {
+            display: none;
+        }
+        
+    }
+    @media screen and (max-width: 510px) {
+        h2 {
+            font-size: $fs-3 - 2;
+        }
+    }
+}

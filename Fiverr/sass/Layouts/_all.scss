@@ -1,0 +1,16 @@
+.all {
+    margin-bottom: $mg-0;
+    a {
+        @include style-text($color-green-0, $fs-0, $fw-1);
+        &:hover {
+            text-decoration: none;
+        }
+    }
+    i {
+        color: $color-green-0;
+    }
+    display: none;
+    @media screen and (max-width: 1148px) {
+        display: block;
+    }
+}

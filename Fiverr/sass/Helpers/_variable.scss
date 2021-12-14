@@ -1,0 +1,57 @@
+// COLORS
+$color-grey-0: #62646a;
+$color-grey-1: #dadbdd;
+$color-grey-2: #7a7d85;
+$color-grey-3: #e4e5e7;
+$color-grey-4: #b5b6ba;
+$color-grey-5: #FAFAFA;
+$color-grey-6: #efeff0;
+$color-grey-7: #ced4da;
+$color-white-0: #fff;
+$color-green-0: #1dbf73;
+$color-green-1: #19a463;
+$color-green-2: #02c2a9;
+$color-blue-0: #4a73e8;
+$color-pink-0: #ff62ad;
+$color-black-0: #222325;
+$color-black-1: #404145;
+$color-yellow-0: #ffbe5b;
+
+// FONT-SIZE
+$fs-0: 16px;
+$fs-1: 18px;
+$fs-2: 32px;
+$fs-3: 24px;
+
+// PADDING
+$pd-0: 8px;
+$pd-1: 16px;
+$pd-2: 25px;
+$pd-3: 32px;
+$pd-4: 4px;
+$pd-5: 50px;
+
+// MARGIN
+$mg-0: 16px;
+$mg-1: 32px;
+$mg-2: 6px;
+$mg-3: 25px;
+$mg-4: 44px;
+
+// BORDER-RADIUS
+$border-radius-0: 3px;
+
+// FONT-WEIGHT
+$fw-0: normal;
+$fw-1: 700;
+$fw-2: 600;
+$fw-3: 500;
+
+// BREAKPOINTS
+$breakpoints: (
+    'extra-large': 1200px,
+    'x-large': 1160px,
+    'large': 992px,
+    'medium': 768px,
+    'small': 576px
+)

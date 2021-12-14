@@ -1,0 +1,1754 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- FONT GOOGLE -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- FONTAWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- BS4 CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <!-- OWL CAROUSEL -->
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header>
+        <nav class="fiverrNavBar navbar navbar-expand-lg py-3">
+            <div class="d-lg-none col-2 col-md-3">
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon">
+                        <i class="fa fa-bars"></i>
+                    </span>
+                </button>
+            </div>
+
+            <div class="col-10 col-md-9 col-lg-5">
+                <div class="fiverrNavBar__left d-flex align-items-center">
+                    <a class="navbar-brand" href="#">
+                        <svg width="89" height="27" viewBox="0 0 89 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g fill="#404145">
+                                <path
+                                    d="m81.6 13.1h-3.1c-2 0-3.1 1.5-3.1 4.1v9.3h-6v-13.4h-2.5c-2 0-3.1 1.5-3.1 4.1v9.3h-6v-18.4h6v2.8c1-2.2 2.3-2.8 4.3-2.8h7.3v2.8c1-2.2 2.3-2.8 4.3-2.8h2zm-25.2 5.6h-12.4c.3 2.1 1.6 3.2 3.7 3.2 1.6 0 2.7-.7 3.1-1.8l5.3 1.5c-1.3 3.2-4.5 5.1-8.4 5.1-6.5 0-9.5-5.1-9.5-9.5 0-4.3 2.6-9.4 9.1-9.4 6.9 0 9.2 5.2 9.2 9.1 0 .9 0 1.4-.1 1.8zm-5.7-3.5c-.1-1.6-1.3-3-3.3-3-1.9 0-3 .8-3.4 3zm-22.9 11.3h5.2l6.6-18.3h-6l-3.2 10.7-3.2-10.8h-6zm-24.4 0h5.9v-13.4h5.7v13.4h5.9v-18.4h-11.6v-1.1c0-1.2.9-2 2.2-2h3.5v-5h-4.4c-4.3 0-7.2 2.7-7.2 6.6v1.5h-3.4v5h3.4z">
+                                </path>
+                            </g>
+                            <g fill="#1dbf73">
+                                <path
+                                    d="m85.3 27c2 0 3.7-1.7 3.7-3.7s-1.7-3.7-3.7-3.7-3.7 1.7-3.7 3.7 1.7 3.7 3.7 3.7z">
+                                </path>
+                            </g>
+                        </svg>
+                    </a>
+                    <form action="" class="fiverrNavBar__form-search">
+                        <div class="input-group">
+                            <i class="fa fa-search"></i>
+                            <input type="text" class="form-control" placeholder="Find Services">
+                            <div class="input-group-append">
+                                <span class="input-group-text" id="basic-addon2">Search</span>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-lg-7">
+                <div class="fiverrNavBar__right">
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item ">
+                                <a class="nav-link" href="#">Fiverr Pro <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Explore</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link messages" href="#">Messages</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Lists</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Orders</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link selling" href="#">Switch to Selling</a>
+                            </li>
+                            <div class="fiverrNavBar__avatar">
+                                <img src="./img/avatar.jpg" alt="">
+                            </div>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+        </nav>
+    </header>
+    <!-- CATEGORIES -->
+    <section class="categories">
+        <ul class="nav">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Graphics & Design</a>
+                <div class="sub-menu">
+                    <div class="row">
+                        <div class="col-6 ">
+                            <h2>Logo & Brand Identity</h2>
+                            <ul>
+                                <li class="sub-menu-item"><a href="">Logo Design</a></li>
+                                <li class="sub-menu-item"><a href="">Brand Style Guides</a></li>
+                                <li class="sub-menu-item"><a href="">Business Cards & Stationery</a></li>
+                            </ul>
+                            <h2>Gaming</h2>
+                            <ul>
+                                <li class="sub-menu-item"><a href="">Game Art</a></li>
+                                <li class="sub-menu-item"><a href="">Graphics for Streamers</a></li>
+                                <li class="sub-menu-item"><a href="">Twitch Store</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-6">
+                            <h2>Web & App Design</h2>
+                            <ul>
+                                <li class="sub-menu-item"><a href="">Website Design</a></li>
+                                <li class="sub-menu-item"><a href="">App Design</a></li>
+                                <li class="sub-menu-item"><a href="">UX Design</a></li>
+                                <li class="sub-menu-item"><a href="">Landing Page Design</a></li>
+                            </ul>
+                            <h2>Social Media</h2>
+                            <ul>
+                                <li class="sub-menu-item"><a href="">Social Media Design</a></li>
+                                <li class="sub-menu-item"><a href="">AR Filters & Lenses</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Digital Marketing</a>
+                <div class="sub-menu">
+                    <div class="row">
+                        <div class="col-6 ">
+                            <h2>Logo & Brand Identity</h2>
+                            <ul>
+                                <li class="sub-menu-item"><a href="">Logo Design</a></li>
+                                <li class="sub-menu-item"><a href="">Brand Style Guides</a></li>
+                                <li class="sub-menu-item"><a href="">Business Cards & Stationery</a></li>
+                            </ul>
+                            <h2>Gaming</h2>
+                            <ul>
+                                <li class="sub-menu-item"><a href="">Game Art</a></li>
+                                <li class="sub-menu-item"><a href="">Graphics for Streamers</a></li>
+                                <li class="sub-menu-item"><a href="">Twitch Store</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-6">
+                            <h2>Web & App Design</h2>
+                            <ul>
+                                <li class="sub-menu-item"><a href="">Website Design</a></li>
+                                <li class="sub-menu-item"><a href="">App Design</a></li>
+                                <li class="sub-menu-item"><a href="">UX Design</a></li>
+                                <li class="sub-menu-item"><a href="">Landing Page Design</a></li>
+                            </ul>
+                            <h2>Social Media</h2>
+                            <ul>
+                                <li class="sub-menu-item"><a href="">Social Media Design</a></li>
+                                <li class="sub-menu-item"><a href="">AR Filters & Lenses</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Writing & Traslation</a>
+                <div class="sub-menu">
+                    <div class="row">
+                        <div class="col-6 ">
+                            <h2>Logo & Brand Identity</h2>
+                            <ul>
+                                <li class="sub-menu-item"><a href="">Logo Design</a></li>
+                                <li class="sub-menu-item"><a href="">Brand Style Guides</a></li>
+                                <li class="sub-menu-item"><a href="">Business Cards & Stationery</a></li>
+                            </ul>
+                            <h2>Gaming</h2>
+                            <ul>
+                                <li class="sub-menu-item"><a href="">Game Art</a></li>
+                                <li class="sub-menu-item"><a href="">Graphics for Streamers</a></li>
+                                <li class="sub-menu-item"><a href="">Twitch Store</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-6">
+                            <h2>Web & App Design</h2>
+                            <ul>
+                                <li class="sub-menu-item"><a href="">Website Design</a></li>
+                                <li class="sub-menu-item"><a href="">App Design</a></li>
+                                <li class="sub-menu-item"><a href="">UX Design</a></li>
+                                <li class="sub-menu-item"><a href="">Landing Page Design</a></li>
+                            </ul>
+                            <h2>Social Media</h2>
+                            <ul>
+                                <li class="sub-menu-item"><a href="">Social Media Design</a></li>
+                                <li class="sub-menu-item"><a href="">AR Filters & Lenses</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Video & Animation</a>
+                <div class="sub-menu">
+                    <div class="row">
+                        <div class="col-6 ">
+                            <h2>Logo & Brand Identity</h2>
+                            <ul>
+                                <li class="sub-menu-item"><a href="">Logo Design</a></li>
+                                <li class="sub-menu-item"><a href="">Brand Style Guides</a></li>
+                                <li class="sub-menu-item"><a href="">Business Cards & Stationery</a></li>
+                            </ul>
+                            <h2>Gaming</h2>
+                            <ul>
+                                <li class="sub-menu-item"><a href="">Game Art</a></li>
+                                <li class="sub-menu-item"><a href="">Graphics for Streamers</a></li>
+                                <li class="sub-menu-item"><a href="">Twitch Store</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-6">
+                            <h2>Web & App Design</h2>
+                            <ul>
+                                <li class="sub-menu-item"><a href="">Website Design</a></li>
+                                <li class="sub-menu-item"><a href="">App Design</a></li>
+                                <li class="sub-menu-item"><a href="">UX Design</a></li>
+                                <li class="sub-menu-item"><a href="">Landing Page Design</a></li>
+                            </ul>
+                            <h2>Social Media</h2>
+                            <ul>
+                                <li class="sub-menu-item"><a href="">Social Media Design</a></li>
+                                <li class="sub-menu-item"><a href="">AR Filters & Lenses</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Music & Audio</a>
+                <div class="sub-menu">
+                    <div class="row">
+                        <div class="col-6 ">
+                            <h2>Logo & Brand Identity</h2>
+                            <ul>
+                                <li class="sub-menu-item"><a href="">Logo Design</a></li>
+                                <li class="sub-menu-item"><a href="">Brand Style Guides</a></li>
+                                <li class="sub-menu-item"><a href="">Business Cards & Stationery</a></li>
+                            </ul>
+                            <h2>Gaming</h2>
+                            <ul>
+                                <li class="sub-menu-item"><a href="">Game Art</a></li>
+                                <li class="sub-menu-item"><a href="">Graphics for Streamers</a></li>
+                                <li class="sub-menu-item"><a href="">Twitch Store</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-6">
+                            <h2>Web & App Design</h2>
+                            <ul>
+                                <li class="sub-menu-item"><a href="">Website Design</a></li>
+                                <li class="sub-menu-item"><a href="">App Design</a></li>
+                                <li class="sub-menu-item"><a href="">UX Design</a></li>
+                                <li class="sub-menu-item"><a href="">Landing Page Design</a></li>
+                            </ul>
+                            <h2>Social Media</h2>
+                            <ul>
+                                <li class="sub-menu-item"><a href="">Social Media Design</a></li>
+                                <li class="sub-menu-item"><a href="">AR Filters & Lenses</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Programming & Tech</a>
+                <div class="sub-menu">
+                    <div class="row">
+                        <div class="col-6 ">
+                            <h2>Logo & Brand Identity</h2>
+                            <ul>
+                                <li class="sub-menu-item"><a href="">Logo Design</a></li>
+                                <li class="sub-menu-item"><a href="">Brand Style Guides</a></li>
+                                <li class="sub-menu-item"><a href="">Business Cards & Stationery</a></li>
+                            </ul>
+                            <h2>Gaming</h2>
+                            <ul>
+                                <li class="sub-menu-item"><a href="">Game Art</a></li>
+                                <li class="sub-menu-item"><a href="">Graphics for Streamers</a></li>
+                                <li class="sub-menu-item"><a href="">Twitch Store</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-6">
+                            <h2>Web & App Design</h2>
+                            <ul>
+                                <li class="sub-menu-item"><a href="">Website Design</a></li>
+                                <li class="sub-menu-item"><a href="">App Design</a></li>
+                                <li class="sub-menu-item"><a href="">UX Design</a></li>
+                                <li class="sub-menu-item"><a href="">Landing Page Design</a></li>
+                            </ul>
+                            <h2>Social Media</h2>
+                            <ul>
+                                <li class="sub-menu-item"><a href="">Social Media Design</a></li>
+                                <li class="sub-menu-item"><a href="">AR Filters & Lenses</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Data</a>
+                <div class="sub-menu">
+                    <div class="row">
+                        <div class="col-6 ">
+                            <h2>Logo & Brand Identity</h2>
+                            <ul>
+                                <li class="sub-menu-item"><a href="">Logo Design</a></li>
+                                <li class="sub-menu-item"><a href="">Brand Style Guides</a></li>
+                                <li class="sub-menu-item"><a href="">Business Cards & Stationery</a></li>
+                            </ul>
+                            <h2>Gaming</h2>
+                            <ul>
+                                <li class="sub-menu-item"><a href="">Game Art</a></li>
+                                <li class="sub-menu-item"><a href="">Graphics for Streamers</a></li>
+                                <li class="sub-menu-item"><a href="">Twitch Store</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-6">
+                            <h2>Web & App Design</h2>
+                            <ul>
+                                <li class="sub-menu-item"><a href="">Website Design</a></li>
+                                <li class="sub-menu-item"><a href="">App Design</a></li>
+                                <li class="sub-menu-item"><a href="">UX Design</a></li>
+                                <li class="sub-menu-item"><a href="">Landing Page Design</a></li>
+                            </ul>
+                            <h2>Social Media</h2>
+                            <ul>
+                                <li class="sub-menu-item"><a href="">Social Media Design</a></li>
+                                <li class="sub-menu-item"><a href="">AR Filters & Lenses</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Business</a>
+                <div class="sub-menu">
+                    <div class="row">
+                        <div class="col-6 ">
+                            <h2>Logo & Brand Identity</h2>
+                            <ul>
+                                <li class="sub-menu-item"><a href="">Logo Design</a></li>
+                                <li class="sub-menu-item"><a href="">Brand Style Guides</a></li>
+                                <li class="sub-menu-item"><a href="">Business Cards & Stationery</a></li>
+                            </ul>
+                            <h2>Gaming</h2>
+                            <ul>
+                                <li class="sub-menu-item"><a href="">Game Art</a></li>
+                                <li class="sub-menu-item"><a href="">Graphics for Streamers</a></li>
+                                <li class="sub-menu-item"><a href="">Twitch Store</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-6">
+                            <h2>Web & App Design</h2>
+                            <ul>
+                                <li class="sub-menu-item"><a href="">Website Design</a></li>
+                                <li class="sub-menu-item"><a href="">App Design</a></li>
+                                <li class="sub-menu-item"><a href="">UX Design</a></li>
+                                <li class="sub-menu-item"><a href="">Landing Page Design</a></li>
+                            </ul>
+                            <h2>Social Media</h2>
+                            <ul>
+                                <li class="sub-menu-item"><a href="">Social Media Design</a></li>
+                                <li class="sub-menu-item"><a href="">AR Filters & Lenses</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Lifestyle</a>
+                <div class="sub-menu">
+                    <div class="row">
+                        <div class="col-6 ">
+                            <h2>Logo & Brand Identity</h2>
+                            <ul>
+                                <li class="sub-menu-item"><a href="">Logo Design</a></li>
+                                <li class="sub-menu-item"><a href="">Brand Style Guides</a></li>
+                                <li class="sub-menu-item"><a href="">Business Cards & Stationery</a></li>
+                            </ul>
+                            <h2>Gaming</h2>
+                            <ul>
+                                <li class="sub-menu-item"><a href="">Game Art</a></li>
+                                <li class="sub-menu-item"><a href="">Graphics for Streamers</a></li>
+                                <li class="sub-menu-item"><a href="">Twitch Store</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-6">
+                            <h2>Web & App Design</h2>
+                            <ul>
+                                <li class="sub-menu-item"><a href="">Website Design</a></li>
+                                <li class="sub-menu-item"><a href="">App Design</a></li>
+                                <li class="sub-menu-item"><a href="">UX Design</a></li>
+                                <li class="sub-menu-item"><a href="">Landing Page Design</a></li>
+                            </ul>
+                            <h2>Social Media</h2>
+                            <ul>
+                                <li class="sub-menu-item"><a href="">Social Media Design</a></li>
+                                <li class="sub-menu-item"><a href="">AR Filters & Lenses</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </li>
+        </ul>
+    </section>
+    <div class="all text-right pr-4">
+        <a href="#">See All</a>
+        <i class="fa fa-angle-right"></i>
+    </div>
+    <!-- CAROUSEL -->
+    <section class="fiverrCarousel">
+        <div class="fiverrCarousel__content">
+            <div class="row">
+                <div class="d-none d-sm-block col-sm-5 col-lg-3">
+                    <div class="fiverrCarousel__left">
+                        <h3>Hi Ngodkdk,</h3>
+                        <p>Get offers from sellers for your project</p>
+                        <button>Post a Request</button>
+                    </div>
+                </div>
+                <div class="col-sm-7 col-lg-9">
+                    <div class="fiverrCarousel__right">
+                        <div class="owl-carousel owl-theme recommendations-carousel">
+                            <div class="item advertising">
+                                <div class="recommendationsCarousel__content">
+                                    <h2>Create discoverable display ads </h2>
+                                    <p>Increase customer traffic with new Display Advertising services.</p>
+                                </div>
+                            </div>
+                            <div class="item brand-voice">
+                                <div class="recommendationsCarousel__content">
+                                    <h2>Guide your brand voice </h2>
+                                    <p>Establish your brand voice with professional brand guidelines.</p>
+                                </div>
+                            </div>
+                            <div class="item photography">
+                                <div class="recommendationsCarousel__content">
+                                    <h2>New on Fiverr - Local Photography</h2>
+                                    <p>Find professional photographers near you.</p>
+                                </div>
+                            </div>
+                            <div class="item web-development">
+                                <div class="recommendationsCarousel__content">
+                                    <h2>Build and promote your website </h2>
+                                    <p>Discover top-rated freelancers in Web Development, Marketing &amp; Video.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- BROWSING -->
+    <section class="browsing">
+        <div class="section__content">
+            <h2>Continue browsing </h2>
+            <div class="owl-carousel owl-theme section-carousel">
+                <div class="item">
+                    <div class="card">
+                        <img src="./img/browsing1.png" class="card-img-top" alt="browsing image">
+                        <div class="card-body">
+                            <div class="card__personal d-flex align-items-center">
+                                <div class="card__avatar">
+                                    <img src="./img/avatar-br1.jpeg" alt="">
+                                </div>
+                                <div class="card__name">
+                                    <p>simraz123</p>
+                                    <p>Level 1 Seller</p>
+                                </div>
+                            </div>
+                            <div class="card-title">
+                                <h3>I will make a remarkable landing page on HTML CSS</h3>
+                            </div>
+                            <div class="card__rating">
+                                <i class="fa fa-star"></i>
+                                <span>5.0</span>
+                                <span>(2)</span>
+                            </div>
+
+
+                        </div>
+                        <div class="card__option d-flex align-items-center justify-content-between">
+                            <div class="card__option-icon">
+                                <i class="fa fa-bars"></i>
+                                <i class="fa fa-heart ml-1"></i>
+                            </div>
+                            <div class="card__option-price">
+                                <span>STARTING AT</span>
+                                <span>$20</span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card">
+                        <img src="./img/browsing2.png" class="card-img-top" alt="browsing image">
+                        <div class="card-body">
+                            <div class="card__personal d-flex align-items-center">
+                                <div class="card__avatar">
+                                    <img src="./img/avatar-br4.jpg" alt="">
+                                </div>
+                                <div class="card__name">
+                                    <p>ansbilal</p>
+                                    <p>Level 1 Seller</p>
+                                </div>
+                            </div>
+                            <div class="card-title">
+                                <h3>I will design amazing ebay html listing template and ebay store</h3>
+                            </div>
+                            <div class="card__rating">
+                                <i class="fa fa-star"></i>
+                                <span>5.0</span>
+                                <span>(223)</span>
+                            </div>
+
+
+                        </div>
+                        <div class="card__option d-flex align-items-center justify-content-between">
+                            <div class="card__option-icon">
+                                <i class="fa fa-bars"></i>
+                                <i class="fa fa-heart ml-1"></i>
+                            </div>
+                            <div class="card__option-price">
+                                <span>STARTING AT</span>
+                                <span>$15</span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card">
+                        <img src="./img/browsing3.jpg" class="card-img-top" alt="browsing image">
+                        <div class="card-body">
+                            <div class="card__personal d-flex align-items-center">
+                                <div class="card__avatar">
+                                    <img src="./img/avatar-br2.jpg" alt="">
+                                </div>
+                                <div class="card__name">
+                                    <p>devfariduzzaman</p>
+                                    <p>Level 2 Seller</p>
+                                </div>
+                            </div>
+                            <div class="card-title">
+                                <h3>I will design pardot responsive editable landing pages template</h3>
+                            </div>
+                            <div class="card__rating">
+                                <i class="fa fa-star"></i>
+                                <span>4.8</span>
+                                <span>(26)</span>
+                            </div>
+
+
+                        </div>
+                        <div class="card__option d-flex align-items-center justify-content-between">
+                            <div class="card__option-icon">
+                                <i class="fa fa-bars"></i>
+                                <i class="fa fa-heart ml-1"></i>
+                            </div>
+                            <div class="card__option-price">
+                                <span>STARTING AT</span>
+                                <span>$60</span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card">
+                        <img src="./img/browsing4.jpg" class="card-img-top" alt="browsing image">
+                        <div class="card-body">
+                            <div class="card__personal d-flex align-items-center">
+                                <div class="card__avatar">
+                                    <img src="./img/avatar-br3.jpg" alt="">
+                                </div>
+                                <div class="card__name">
+                                    <p>lida_makarchik</p>
+                                    <p>Level 2 Seller</p>
+                                </div>
+                            </div>
+                            <div class="card-title">
+                                <h3>I will be your front end web developer in html css and javascript</h3>
+                            </div>
+                            <div class="card__rating">
+                                <i class="fa fa-star"></i>
+                                <span>5.0</span>
+                                <span>(115)</span>
+                            </div>
+
+
+                        </div>
+                        <div class="card__option d-flex align-items-center justify-content-between">
+                            <div class="card__option-icon">
+                                <i class="fa fa-bars"></i>
+                                <i class="fa fa-heart ml-1"></i>
+                            </div>
+                            <div class="card__option-price">
+                                <span>STARTING AT</span>
+                                <span>$10</span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card">
+                        <img src="./img/browsing5.jpg" class="card-img-top" alt="browsing image">
+                        <div class="card-body">
+                            <div class="card__personal d-flex align-items-center">
+                                <div class="card__avatar">
+                                    <img src="./img/avatar-br6.jpg" alt="">
+                                </div>
+                                <div class="card__name">
+                                    <p>fahadqadir2</p>
+                                    <p>Level 1 Seller</p>
+                                </div>
+                            </div>
+                            <div class="card-title">
+                                <h3>I will design, redesign or build a responsive html landing page</h3>
+                            </div>
+                            <div class="card__rating">
+                                <i class="fa fa-star"></i>
+                                <span>4.9</span>
+                                <span>(2)</span>
+                            </div>
+
+
+                        </div>
+                        <div class="card__option d-flex align-items-center justify-content-between">
+                            <div class="card__option-icon">
+                                <i class="fa fa-bars"></i>
+                                <i class="fa fa-heart ml-1"></i>
+                            </div>
+                            <div class="card__option-price">
+                                <span>STARTING AT</span>
+                                <span>$35</span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- POPULAR -->
+    <section class="popular">
+        <div class="section__content">
+            <h2>Most popular Gigs in</h2>
+            <span><a href="#">Display Advertising</a></span>
+            <div class="owl-carousel owl-theme section-carousel pt-3">
+                <div class="item">
+                    <div class="card">
+                        <img src="./img/popular1.jpg" class="card-img-top" alt="browsing image">
+                        <div class="card-body">
+                            <div class="card__personal d-flex align-items-center">
+                                <div class="card__avatar">
+                                    <img src="./img/avatar-pop1.jpeg" alt="">
+                                </div>
+                                <div class="card__name">
+                                    <p>simraz123</p>
+                                    <p>Level 1 Seller</p>
+                                </div>
+                            </div>
+                            <div class="card-title">
+                                <h3>I will make a remarkable landing page on HTML CSS</h3>
+                            </div>
+                            <div class="card__rating">
+                                <i class="fa fa-star"></i>
+                                <span>5.0</span>
+                                <span>(2)</span>
+                            </div>
+
+
+                        </div>
+                        <div class="card__option d-flex align-items-center justify-content-between">
+                            <div class="card__option-icon">
+                                <i class="fa fa-bars"></i>
+                                <i class="fa fa-heart ml-1"></i>
+                            </div>
+                            <div class="card__option-price">
+                                <span>STARTING AT</span>
+                                <span>$20</span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card">
+                        <img src="./img/popular2.png" class="card-img-top" alt="browsing image">
+                        <div class="card-body">
+                            <div class="card__personal d-flex align-items-center">
+                                <div class="card__avatar">
+                                    <img src="./img/avatar-pop2.png" alt="">
+                                </div>
+                                <div class="card__name">
+                                    <p>ansbilal</p>
+                                    <p>Level 1 Seller</p>
+                                </div>
+                            </div>
+                            <div class="card-title">
+                                <h3>I will make a remarkable landing page on HTML CSS</h3>
+                            </div>
+                            <div class="card__rating">
+                                <i class="fa fa-star"></i>
+                                <span>5.0</span>
+                                <span>(223)</span>
+                            </div>
+
+
+                        </div>
+                        <div class="card__option d-flex align-items-center justify-content-between">
+                            <div class="card__option-icon">
+                                <i class="fa fa-bars"></i>
+                                <i class="fa fa-heart ml-1"></i>
+                            </div>
+                            <div class="card__option-price">
+                                <span>STARTING AT</span>
+                                <span>$15</span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card">
+                        <img src="./img/popular3.png" class="card-img-top" alt="browsing image">
+                        <div class="card-body">
+                            <div class="card__personal d-flex align-items-center">
+                                <div class="card__avatar">
+                                    <img src="./img/avatar-pop3.png" alt="">
+                                </div>
+                                <div class="card__name">
+                                    <p>devfariduzzaman</p>
+                                    <p>Level 2 Seller</p>
+                                </div>
+                            </div>
+                            <div class="card-title">
+                                <h3>I will make a remarkable landing page on HTML CSS</h3>
+                            </div>
+                            <div class="card__rating">
+                                <i class="fa fa-star"></i>
+                                <span>4.8</span>
+                                <span>(26)</span>
+                            </div>
+
+
+                        </div>
+                        <div class="card__option d-flex align-items-center justify-content-between">
+                            <div class="card__option-icon">
+                                <i class="fa fa-bars"></i>
+                                <i class="fa fa-heart ml-1"></i>
+                            </div>
+                            <div class="card__option-price">
+                                <span>STARTING AT</span>
+                                <span>$60</span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card">
+                        <img src="./img/popular4.png" class="card-img-top" alt="browsing image">
+                        <div class="card-body">
+                            <div class="card__personal d-flex align-items-center">
+                                <div class="card__avatar">
+                                    <img src="./img/avatar-pop4.png" alt="">
+                                </div>
+                                <div class="card__name">
+                                    <p>lida_makarchik</p>
+                                    <p>Level 2 Seller</p>
+                                </div>
+                            </div>
+                            <div class="card-title">
+                                <h3>I will make a remarkable landing page on HTML CSS</h3>
+                            </div>
+                            <div class="card__rating">
+                                <i class="fa fa-star"></i>
+                                <span>5.0</span>
+                                <span>(115)</span>
+                            </div>
+
+
+                        </div>
+                        <div class="card__option d-flex align-items-center justify-content-between">
+                            <div class="card__option-icon">
+                                <i class="fa fa-bars"></i>
+                                <i class="fa fa-heart ml-1"></i>
+                            </div>
+                            <div class="card__option-price">
+                                <span>STARTING AT</span>
+                                <span>$10</span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card">
+                        <img src="./img/popular5.jpg" class="card-img-top" alt="browsing image">
+                        <div class="card-body">
+                            <div class="card__personal d-flex align-items-center">
+                                <div class="card__avatar">
+                                    <img src="./img/avatar-pop5.jpg" alt="">
+                                </div>
+                                <div class="card__name">
+                                    <p>fahadqadir2</p>
+                                    <p>Level 1 Seller</p>
+                                </div>
+                            </div>
+                            <div class="card-title">
+                                <h3>I will make a remarkable landing page on HTML CSS</h3>
+                            </div>
+                            <div class="card__rating">
+                                <i class="fa fa-star"></i>
+                                <span>4.9</span>
+                                <span>(2)</span>
+                            </div>
+
+
+                        </div>
+                        <div class="card__option d-flex align-items-center justify-content-between">
+                            <div class="card__option-icon">
+                                <i class="fa fa-bars"></i>
+                                <i class="fa fa-heart ml-1"></i>
+                            </div>
+                            <div class="card__option-price">
+                                <span>STARTING AT</span>
+                                <span>$35</span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- RECOMMEND -->
+    <section class="recommend">
+        <div class="section__content">
+            <h2>Gigs you may like </h2>
+            <div class="recommend__items">
+                <div class="row">
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card">
+                            <img src="./img/recommend1.jpg" class="card-img-top" alt="browsing image">
+                            <div class="card-body">
+                                <div class="card__personal d-flex align-items-center">
+                                    <div class="card__avatar">
+                                        <img src="./img/avatar-br1.jpeg" alt="">
+                                    </div>
+                                    <div class="card__name">
+                                        <p>simraz123</p>
+                                        <p>Level 1 Seller</p>
+                                    </div>
+                                </div>
+                                <div class="card-title">
+                                    <h3>I will make a remarkable landing page on HTML CSS</h3>
+                                </div>
+                                <div class="card__rating">
+                                    <i class="fa fa-star"></i>
+                                    <span>5.0</span>
+                                    <span>(2)</span>
+                                </div>
+
+
+                            </div>
+                            <div class="card__option d-flex align-items-center justify-content-between">
+                                <div class="card__option-icon">
+                                    <i class="fa fa-bars"></i>
+                                    <i class="fa fa-heart ml-1"></i>
+                                </div>
+                                <div class="card__option-price">
+                                    <span>STARTING AT</span>
+                                    <span>$20</span>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card">
+                            <img src="./img/recommend2.jpg" class="card-img-top" alt="browsing image">
+                            <div class="card-body">
+                                <div class="card__personal d-flex align-items-center">
+                                    <div class="card__avatar">
+                                        <img src="./img/avatar-br1.jpeg" alt="">
+                                    </div>
+                                    <div class="card__name">
+                                        <p>simraz123</p>
+                                        <p>Level 1 Seller</p>
+                                    </div>
+                                </div>
+                                <div class="card-title">
+                                    <h3>I will make a remarkable landing page on HTML CSS</h3>
+                                </div>
+                                <div class="card__rating">
+                                    <i class="fa fa-star"></i>
+                                    <span>5.0</span>
+                                    <span>(2)</span>
+                                </div>
+
+
+                            </div>
+                            <div class="card__option d-flex align-items-center justify-content-between">
+                                <div class="card__option-icon">
+                                    <i class="fa fa-bars"></i>
+                                    <i class="fa fa-heart ml-1"></i>
+                                </div>
+                                <div class="card__option-price">
+                                    <span>STARTING AT</span>
+                                    <span>$20</span>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card">
+                            <img src="./img/recommend3.jpg" class="card-img-top" alt="browsing image">
+                            <div class="card-body">
+                                <div class="card__personal d-flex align-items-center">
+                                    <div class="card__avatar">
+                                        <img src="./img/avatar-br1.jpeg" alt="">
+                                    </div>
+                                    <div class="card__name">
+                                        <p>simraz123</p>
+                                        <p>Level 1 Seller</p>
+                                    </div>
+                                </div>
+                                <div class="card-title">
+                                    <h3>I will make a remarkable landing page on HTML CSS</h3>
+                                </div>
+                                <div class="card__rating">
+                                    <i class="fa fa-star"></i>
+                                    <span>5.0</span>
+                                    <span>(2)</span>
+                                </div>
+
+
+                            </div>
+                            <div class="card__option d-flex align-items-center justify-content-between">
+                                <div class="card__option-icon">
+                                    <i class="fa fa-bars"></i>
+                                    <i class="fa fa-heart ml-1"></i>
+                                </div>
+                                <div class="card__option-price">
+                                    <span>STARTING AT</span>
+                                    <span>$20</span>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card">
+                            <img src="./img/recommend4.jpg" class="card-img-top" alt="browsing image">
+                            <div class="card-body">
+                                <div class="card__personal d-flex align-items-center">
+                                    <div class="card__avatar">
+                                        <img src="./img/avatar-br1.jpeg" alt="">
+                                    </div>
+                                    <div class="card__name">
+                                        <p>simraz123</p>
+                                        <p>Level 1 Seller</p>
+                                    </div>
+                                </div>
+                                <div class="card-title">
+                                    <h3>I will make a remarkable landing page on HTML CSS</h3>
+                                </div>
+                                <div class="card__rating">
+                                    <i class="fa fa-star"></i>
+                                    <span>5.0</span>
+                                    <span>(2)</span>
+                                </div>
+
+
+                            </div>
+                            <div class="card__option d-flex align-items-center justify-content-between">
+                                <div class="card__option-icon">
+                                    <i class="fa fa-bars"></i>
+                                    <i class="fa fa-heart ml-1"></i>
+                                </div>
+                                <div class="card__option-price">
+                                    <span>STARTING AT</span>
+                                    <span>$20</span>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card">
+                            <img src="./img/recommend5.jpg" class="card-img-top" alt="browsing image">
+                            <div class="card-body">
+                                <div class="card__personal d-flex align-items-center">
+                                    <div class="card__avatar">
+                                        <img src="./img/avatar-br1.jpeg" alt="">
+                                    </div>
+                                    <div class="card__name">
+                                        <p>simraz123</p>
+                                        <p>Level 1 Seller</p>
+                                    </div>
+                                </div>
+                                <div class="card-title">
+                                    <h3>I will make a remarkable landing page on HTML CSS</h3>
+                                </div>
+                                <div class="card__rating">
+                                    <i class="fa fa-star"></i>
+                                    <span>5.0</span>
+                                    <span>(2)</span>
+                                </div>
+
+
+                            </div>
+                            <div class="card__option d-flex align-items-center justify-content-between">
+                                <div class="card__option-icon">
+                                    <i class="fa fa-bars"></i>
+                                    <i class="fa fa-heart ml-1"></i>
+                                </div>
+                                <div class="card__option-price">
+                                    <span>STARTING AT</span>
+                                    <span>$20</span>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card">
+                            <img src="./img/recommend6.png" class="card-img-top" alt="browsing image">
+                            <div class="card-body">
+                                <div class="card__personal d-flex align-items-center">
+                                    <div class="card__avatar">
+                                        <img src="./img/avatar-br1.jpeg" alt="">
+                                    </div>
+                                    <div class="card__name">
+                                        <p>simraz123</p>
+                                        <p>Level 1 Seller</p>
+                                    </div>
+                                </div>
+                                <div class="card-title">
+                                    <h3>I will make a remarkable landing page on HTML CSS</h3>
+                                </div>
+                                <div class="card__rating">
+                                    <i class="fa fa-star"></i>
+                                    <span>5.0</span>
+                                    <span>(2)</span>
+                                </div>
+
+
+                            </div>
+                            <div class="card__option d-flex align-items-center justify-content-between">
+                                <div class="card__option-icon">
+                                    <i class="fa fa-bars"></i>
+                                    <i class="fa fa-heart ml-1"></i>
+                                </div>
+                                <div class="card__option-price">
+                                    <span>STARTING AT</span>
+                                    <span>$20</span>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card">
+                            <img src="./img/recommend7.jpg" class="card-img-top" alt="browsing image">
+                            <div class="card-body">
+                                <div class="card__personal d-flex align-items-center">
+                                    <div class="card__avatar">
+                                        <img src="./img/avatar-br1.jpeg" alt="">
+                                    </div>
+                                    <div class="card__name">
+                                        <p>simraz123</p>
+                                        <p>Level 1 Seller</p>
+                                    </div>
+                                </div>
+                                <div class="card-title">
+                                    <h3>I will make a remarkable landing page on HTML CSS</h3>
+                                </div>
+                                <div class="card__rating">
+                                    <i class="fa fa-star"></i>
+                                    <span>5.0</span>
+                                    <span>(2)</span>
+                                </div>
+
+
+                            </div>
+                            <div class="card__option d-flex align-items-center justify-content-between">
+                                <div class="card__option-icon">
+                                    <i class="fa fa-bars"></i>
+                                    <i class="fa fa-heart ml-1"></i>
+                                </div>
+                                <div class="card__option-price">
+                                    <span>STARTING AT</span>
+                                    <span>$20</span>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card">
+                            <img src="./img/recommend8.jpg" class="card-img-top" alt="browsing image">
+                            <div class="card-body">
+                                <div class="card__personal d-flex align-items-center">
+                                    <div class="card__avatar">
+                                        <img src="./img/avatar-br1.jpeg" alt="">
+                                    </div>
+                                    <div class="card__name">
+                                        <p>simraz123</p>
+                                        <p>Level 1 Seller</p>
+                                    </div>
+                                </div>
+                                <div class="card-title">
+                                    <h3>I will make a remarkable landing page on HTML CSS</h3>
+                                </div>
+                                <div class="card__rating">
+                                    <i class="fa fa-star"></i>
+                                    <span>5.0</span>
+                                    <span>(2)</span>
+                                </div>
+
+
+                            </div>
+                            <div class="card__option d-flex align-items-center justify-content-between">
+                                <div class="card__option-icon">
+                                    <i class="fa fa-bars"></i>
+                                    <i class="fa fa-heart ml-1"></i>
+                                </div>
+                                <div class="card__option-price">
+                                    <span>STARTING AT</span>
+                                    <span>$20</span>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- BANNER -->
+    <section class="banner">
+        <div class="fiverrCarousel">
+            <div class="fiverrCarousel__content">
+                <div class="fiverrCarousel__right">
+                    <div class="owl-carousel owl-theme recommendations-carousel">
+                        <div class="item advertising">
+                            <div class="recommendationsCarousel__content">
+                                <h2>Build a strong online presence </h2>
+                                <p>Boost your business with this course on personal branding techniques.</p>
+                            </div>
+                        </div>
+                        <div class="item brand-voice">
+                            <div class="recommendationsCarousel__content">
+                                <h2>Convert web visitors into customers</h2>
+                                <p>Unlock the secrets of conversion rate optimization with this course.</p>
+                            </div>
+                        </div>
+                        <div class="item photography">
+                            <div class="recommendationsCarousel__content">
+                                <h2>Master social media platforms</h2>
+                                <p>Learn how to monetize your online presence with this course.</p>
+                            </div>
+                        </div>
+                        <div class="item web-development">
+                            <div class="recommendationsCarousel__content">
+                                <h2>Facebook ads. Know it all.</h2>
+                                <p>Scale your business with best practices covered in this course.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- PICKS -->
+    <section class="picks">
+        <div class="section__content">
+            <h2>Editors' picks </h2>
+            <div class="recommend__items">
+                <div class="row">
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card">
+                            <img src="./img/pick1.png" class="card-img-top" alt="browsing image">
+                            <div class="card-body">
+                                <div class="card__personal d-flex align-items-center">
+                                    <div class="card__avatar">
+                                        <img src="./img/avatar-br1.jpeg" alt="">
+                                    </div>
+                                    <div class="card__name">
+                                        <p>simraz123</p>
+                                        <p>Level 1 Seller</p>
+                                    </div>
+                                </div>
+                                <div class="card-title">
+                                    <h3>I will make a remarkable landing page on HTML CSS</h3>
+                                </div>
+                                <div class="card__rating">
+                                    <i class="fa fa-star"></i>
+                                    <span>5.0</span>
+                                    <span>(2)</span>
+                                </div>
+
+
+                            </div>
+                            <div class="card__option d-flex align-items-center justify-content-between">
+                                <div class="card__option-icon">
+                                    <i class="fa fa-bars"></i>
+                                    <i class="fa fa-heart ml-1"></i>
+                                </div>
+                                <div class="card__option-price">
+                                    <span>STARTING AT</span>
+                                    <span>$20</span>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card">
+                            <img src="./img/pick2.jpg" class="card-img-top" alt="browsing image">
+                            <div class="card-body">
+                                <div class="card__personal d-flex align-items-center">
+                                    <div class="card__avatar">
+                                        <img src="./img/avatar-br1.jpeg" alt="">
+                                    </div>
+                                    <div class="card__name">
+                                        <p>simraz123</p>
+                                        <p>Level 1 Seller</p>
+                                    </div>
+                                </div>
+                                <div class="card-title">
+                                    <h3>I will make a remarkable landing page on HTML CSS</h3>
+                                </div>
+                                <div class="card__rating">
+                                    <i class="fa fa-star"></i>
+                                    <span>5.0</span>
+                                    <span>(2)</span>
+                                </div>
+
+
+                            </div>
+                            <div class="card__option d-flex align-items-center justify-content-between">
+                                <div class="card__option-icon">
+                                    <i class="fa fa-bars"></i>
+                                    <i class="fa fa-heart ml-1"></i>
+                                </div>
+                                <div class="card__option-price">
+                                    <span>STARTING AT</span>
+                                    <span>$20</span>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card">
+                            <img src="./img/pick3.jpg" class="card-img-top" alt="browsing image">
+                            <div class="card-body">
+                                <div class="card__personal d-flex align-items-center">
+                                    <div class="card__avatar">
+                                        <img src="./img/avatar-br1.jpeg" alt="">
+                                    </div>
+                                    <div class="card__name">
+                                        <p>simraz123</p>
+                                        <p>Level 1 Seller</p>
+                                    </div>
+                                </div>
+                                <div class="card-title">
+                                    <h3>I will make a remarkable landing page on HTML CSS</h3>
+                                </div>
+                                <div class="card__rating">
+                                    <i class="fa fa-star"></i>
+                                    <span>5.0</span>
+                                    <span>(2)</span>
+                                </div>
+
+
+                            </div>
+                            <div class="card__option d-flex align-items-center justify-content-between">
+                                <div class="card__option-icon">
+                                    <i class="fa fa-bars"></i>
+                                    <i class="fa fa-heart ml-1"></i>
+                                </div>
+                                <div class="card__option-price">
+                                    <span>STARTING AT</span>
+                                    <span>$20</span>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card">
+                            <img src="./img/pick4.png" class="card-img-top" alt="browsing image">
+                            <div class="card-body">
+                                <div class="card__personal d-flex align-items-center">
+                                    <div class="card__avatar">
+                                        <img src="./img/avatar-br1.jpeg" alt="">
+                                    </div>
+                                    <div class="card__name">
+                                        <p>simraz123</p>
+                                        <p>Level 1 Seller</p>
+                                    </div>
+                                </div>
+                                <div class="card-title">
+                                    <h3>I will make a remarkable landing page on HTML CSS</h3>
+                                </div>
+                                <div class="card__rating">
+                                    <i class="fa fa-star"></i>
+                                    <span>5.0</span>
+                                    <span>(2)</span>
+                                </div>
+
+
+                            </div>
+                            <div class="card__option d-flex align-items-center justify-content-between">
+                                <div class="card__option-icon">
+                                    <i class="fa fa-bars"></i>
+                                    <i class="fa fa-heart ml-1"></i>
+                                </div>
+                                <div class="card__option-price">
+                                    <span>STARTING AT</span>
+                                    <span>$20</span>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card">
+                            <img src="./img/pick5.png" class="card-img-top" alt="browsing image">
+                            <div class="card-body">
+                                <div class="card__personal d-flex align-items-center">
+                                    <div class="card__avatar">
+                                        <img src="./img/avatar-br1.jpeg" alt="">
+                                    </div>
+                                    <div class="card__name">
+                                        <p>simraz123</p>
+                                        <p>Level 1 Seller</p>
+                                    </div>
+                                </div>
+                                <div class="card-title">
+                                    <h3>I will make a remarkable landing page on HTML CSS</h3>
+                                </div>
+                                <div class="card__rating">
+                                    <i class="fa fa-star"></i>
+                                    <span>5.0</span>
+                                    <span>(2)</span>
+                                </div>
+
+
+                            </div>
+                            <div class="card__option d-flex align-items-center justify-content-between">
+                                <div class="card__option-icon">
+                                    <i class="fa fa-bars"></i>
+                                    <i class="fa fa-heart ml-1"></i>
+                                </div>
+                                <div class="card__option-price">
+                                    <span>STARTING AT</span>
+                                    <span>$20</span>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card">
+                            <img src="./img/pick6.png" class="card-img-top" alt="browsing image">
+                            <div class="card-body">
+                                <div class="card__personal d-flex align-items-center">
+                                    <div class="card__avatar">
+                                        <img src="./img/avatar-br1.jpeg" alt="">
+                                    </div>
+                                    <div class="card__name">
+                                        <p>simraz123</p>
+                                        <p>Level 1 Seller</p>
+                                    </div>
+                                </div>
+                                <div class="card-title">
+                                    <h3>I will make a remarkable landing page on HTML CSS</h3>
+                                </div>
+                                <div class="card__rating">
+                                    <i class="fa fa-star"></i>
+                                    <span>5.0</span>
+                                    <span>(2)</span>
+                                </div>
+
+
+                            </div>
+                            <div class="card__option d-flex align-items-center justify-content-between">
+                                <div class="card__option-icon">
+                                    <i class="fa fa-bars"></i>
+                                    <i class="fa fa-heart ml-1"></i>
+                                </div>
+                                <div class="card__option-price">
+                                    <span>STARTING AT</span>
+                                    <span>$20</span>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card">
+                            <img src="./img/pick7.jpg" class="card-img-top" alt="browsing image">
+                            <div class="card-body">
+                                <div class="card__personal d-flex align-items-center">
+                                    <div class="card__avatar">
+                                        <img src="./img/avatar-br1.jpeg" alt="">
+                                    </div>
+                                    <div class="card__name">
+                                        <p>simraz123</p>
+                                        <p>Level 1 Seller</p>
+                                    </div>
+                                </div>
+                                <div class="card-title">
+                                    <h3>I will make a remarkable landing page on HTML CSS</h3>
+                                </div>
+                                <div class="card__rating">
+                                    <i class="fa fa-star"></i>
+                                    <span>5.0</span>
+                                    <span>(2)</span>
+                                </div>
+
+
+                            </div>
+                            <div class="card__option d-flex align-items-center justify-content-between">
+                                <div class="card__option-icon">
+                                    <i class="fa fa-bars"></i>
+                                    <i class="fa fa-heart ml-1"></i>
+                                </div>
+                                <div class="card__option-price">
+                                    <span>STARTING AT</span>
+                                    <span>$20</span>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card">
+                            <img src="./img/pick8.jpg" class="card-img-top" alt="browsing image">
+                            <div class="card-body">
+                                <div class="card__personal d-flex align-items-center">
+                                    <div class="card__avatar">
+                                        <img src="./img/avatar-br1.jpeg" alt="">
+                                    </div>
+                                    <div class="card__name">
+                                        <p>simraz123</p>
+                                        <p>Level 1 Seller</p>
+                                    </div>
+                                </div>
+                                <div class="card-title">
+                                    <h3>I will make a remarkable landing page on HTML CSS</h3>
+                                </div>
+                                <div class="card__rating">
+                                    <i class="fa fa-star"></i>
+                                    <span>5.0</span>
+                                    <span>(2)</span>
+                                </div>
+
+
+                            </div>
+                            <div class="card__option d-flex align-items-center justify-content-between">
+                                <div class="card__option-icon">
+                                    <i class="fa fa-bars"></i>
+                                    <i class="fa fa-heart ml-1"></i>
+                                </div>
+                                <div class="card__option-price">
+                                    <span>STARTING AT</span>
+                                    <span>$20</span>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer__top py-5 border-top border-bottom">
+            <div class="footer__top-content ">
+                <div class="row">
+                    <div class="col">
+                        <h6>Categories</h6>
+                        <ul class="nav flex-column">
+                            <li class="nav-item">
+                                <a class="nav-link " href="#">Graphics & Design</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Digital Marketing</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Writing & Translation</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Video & Animation</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Music & Audio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Programming & Tech</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Data</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Business</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h6>About</h6>
+                        <ul class="nav flex-column">
+                            <li class="nav-item">
+                                <a class="nav-link " href="#">Careers</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Press & News</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Partnerships</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="#">Careers</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="#">Privacy Policy</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="#">Terms of Service</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="#">Intellectual Property Claims</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="#">Investor Relations</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h6>Support</h6>
+                        <ul class="nav flex-column">
+                            <li class="nav-item">
+                                <a class="nav-link " href="#">Help & Support</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Trust & Safety</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Selling on Fiverr</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Buying on Fiverr</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h6>Community</h6>
+                        <ul class="nav flex-column">
+                            <li class="nav-item">
+                                <a class="nav-link " href="#">Events</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Blog</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Forum</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Community Standards</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Podcast</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Affiliates</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Invite a Friend</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Become a Seller</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Fiverr Elevate</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h6>More From Fiverr</h6>
+                        <ul class="nav flex-column">
+                            <li class="nav-item">
+                                <a class="nav-link " href="#">Fiverr Pro</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Fiverr Studios</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Fiverr Logo Maker</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Fiverr Guides</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Get Inspired</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">ClearVoice</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">AND CO</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Learn</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="footer__bottom-left d-flex align-items-center">
+                <svg width="91" height="27" viewBox="0 0 91 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g fill="#7A7D85">
+                        <path
+                            d="m82.9 13.1h-3.2c-2.1 0-3.2 1.5-3.2 4.1v9.3h-6.1v-13.4h-2.6c-2.1 0-3.2 1.5-3.2 4.1v9.3h-6.1v-18.4h6.1v2.8c1-2.2 2.4-2.8 4.4-2.8h7.4v2.8c1-2.2 2.4-2.8 4.4-2.8h2v5zm-25.6 5.6h-12.6c.3 2.1 1.6 3.2 3.8 3.2 1.6 0 2.8-.7 3.1-1.8l5.4 1.5c-1.3 3.2-4.6 5.1-8.5 5.1-6.6 0-9.6-5.1-9.6-9.5 0-4.3 2.6-9.4 9.2-9.4 7 0 9.3 5.2 9.3 9.1 0 .9 0 1.4-.1 1.8zm-5.9-3.5c-.1-1.6-1.3-3-3.3-3-1.9 0-3.1.8-3.4 3zm-23.1 11.3h5.3l6.7-18.3h-6.1l-3.2 10.7-3.4-10.8h-6.1zm-24.9 0h6v-13.4h5.7v13.4h6v-18.4h-11.6v-1.1c0-1.2.9-2 2.3-2h3.5v-5h-4.4c-4.5 0-7.5 2.7-7.5 6.6v1.5h-3.4v5h3.4z">
+                        </path>
+                    </g>
+                    <g fill="#7A7D85">
+                        <path
+                            d="m90.4 23.3c0 2.1-1.6 3.7-3.8 3.7s-3.8-1.6-3.8-3.7 1.6-3.7 3.8-3.7c2.2-.1 3.8 1.5 3.8 3.7zm-.7 0c0-1.8-1.3-3.1-3.1-3.1s-3.1 1.3-3.1 3.1 1.3 3.1 3.1 3.1 3.1-1.4 3.1-3.1zm-1.7.8.1.9h-.7l-.1-.9c0-.3-.2-.5-.5-.5h-.8v1.4h-.7v-3.5h1.4c.7 0 1.2.4 1.2 1.1 0 .4-.2.6-.5.8.4.1.5.3.6.7zm-1.9-1h.7c.4 0 .5-.3.5-.5 0-.3-.2-.5-.5-.5h-.7z">
+                        </path>
+                    </g>
+                </svg>
+                <span>© Fiverr International Ltd. 2021</span>
+            </div>
+            <div class="footer__bottom-right d-flex align-items-center">
+                <div class="footer__icon">
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-linkedin"></i>
+                    <i class="fab fa-pinterest"></i>
+                    <i class="fab fa-instagram"></i>
+                </div>
+                <div class="footer__languages">
+                    <i class="fa fa-globe"></i>
+                    <span> English</span>
+                </div>
+                <div class="footer__money">
+                    <i class="fa fa-dollar-sign"></i>
+                    <span> USD</span>
+                </div>
+                <div class="footer__accessibility">
+                    <svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="16" cy="16" r="15.5" fill="white" stroke="currentColor" class="circle-wrapper">
+                        </circle>
+                        <path
+                            d="M16 11.5833C17.1506 11.5833 18.0834 10.6506 18.0834 9.49999C18.0834 8.3494 17.1506 7.41666 16 7.41666C14.8494 7.41666 13.9167 8.3494 13.9167 9.49999C13.9167 10.6506 14.8494 11.5833 16 11.5833Z">
+                        </path>
+                        <path
+                            d="M23.9167 12.4167H8.08333C7.86232 12.4167 7.65036 12.5045 7.49408 12.6607C7.3378 12.817 7.25 13.029 7.25 13.25C7.25 13.471 7.3378 13.683 7.49408 13.8392C7.65036 13.9955 7.86232 14.0833 8.08333 14.0833H13.5V25.5417C13.5 25.8179 13.6097 26.0829 13.8051 26.2782C14.0004 26.4736 14.2654 26.5833 14.5417 26.5833C14.8179 26.5833 15.0829 26.4736 15.2782 26.2782C15.4736 26.0829 15.5833 25.8179 15.5833 25.5417V19.5H16.4167V25.5417C16.4167 25.8179 16.5264 26.0829 16.7218 26.2782C16.9171 26.4736 17.1821 26.5833 17.4583 26.5833C17.7346 26.5833 17.9996 26.4736 18.1949 26.2782C18.3903 26.0829 18.5 25.8179 18.5 25.5417V14.0833H23.9167C24.1377 14.0833 24.3496 13.9955 24.5059 13.8392C24.6622 13.683 24.75 13.471 24.75 13.25C24.75 13.029 24.6622 12.817 24.5059 12.6607C24.3496 12.5045 24.1377 12.4167 23.9167 12.4167Z">
+                        </path>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- BS4 JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+    <script src="./js/owl.carousel.min.js"></script>
+    <script>
+        $('.recommendations-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: false,
+            autoplay: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 1
+                },
+                1000: {
+                    items: 1
+                }
+            }
+        })
+        $('.section-carousel').owlCarousel({
+            loop: true,
+            margin: 20,
+            nav: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                530: {
+                    items: 2
+                },
+                900: {
+                    items: 3
+                },
+                1240: {
+                    items: 4
+                },
+                1350: {
+                    items: 5
+                }
+            }
+        })
+    </script>
+</body>
+
+</html>

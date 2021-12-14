@@ -1,0 +1,79 @@
+.fiverrCarousel {
+    margin-bottom: $mg-3;
+    .fiverrCarousel__content {
+        width: 95%;
+        margin: 0 auto;
+        .fiverrCarousel__left {
+            background-color: $color-grey-5;
+            border: 1px solid $color-grey-6;
+            padding: $pd-5 $pd-2 $pd-3;
+            text-align: center;
+            h3 {
+                @include style-text($color-black-1, $fs-1, $fw-1);
+            }
+            p {
+                padding: $pd-0 $pd-1 $pd-2;
+                margin-bottom: 0;
+                color: $color-black-1;
+            }
+            button {
+                @include style-button($color-green-1, transparent, $fs-0 - 2, $fw-2, $pd-4 + 4, $pd-3 + 3, $border-radius-0, $color-green-1);
+                border: 1px solid;
+                transition: all 0.5s;
+                &:hover {
+                    color: $color-white-0;
+                    background-color: $color-green-1;
+                }
+            }
+        }
+        .fiverrCarousel__right {
+            .recommendations-carousel {
+                .item {
+                    height: 240px;
+                    background-blend-mode: overlay;
+                    .recommendationsCarousel__content {
+                        padding: $pd-3;
+                    }
+                    h2 {
+                        @include style-text($color-grey-5, $fs-2, $fw-1);
+                    }
+                    p {
+                        @include style-text($color-grey-5, $fs-1, $fw-0);
+                    }
+                }
+                .advertising {
+                    background: url(https\:\/\/fiverr-res\.cloudinary\.com\/image\/upload\/f_auto\,q_auto\/v1\/attachments\/generic_asset\/asset\/87d7b4a9ace12700c0362ee65371625c-1609767796126\/Display\%20Advertising\%20-\%20Desktop\%20banner\%20\%281\%29\.jpg) 100% 100%, linear-gradient(90deg,rgba(34,35,37,.8),rgba(34,35,37,0));
+                    
+                }
+                .brand-voice {
+                    background: url(https\:\/\/fiverr-res\.cloudinary\.com\/image\/upload\/q_auto\,f_auto\/v1\/attachments\/generic_asset\/asset\/cf1c0dbce413911d82fde452daee8943-1595254828692\/Brand_Voice_and\%20_tone_V4\.jpg) 100% 100%, linear-gradient(90deg,rgba(34,35,37,.8),rgba(34,35,37,0));
+                    
+                }
+                .photography {
+                    background: url(https\:\/\/fiverr-res\.cloudinary\.com\/image\/upload\/q_auto\,f_auto\/v1\/attachments\/generic_asset\/asset\/a6b2a1ff3654032b8ffa9a0caad8ff7e-1590413288688\/Banners_LIHP_Local_Photography\.jpg) 100% 100%, linear-gradient(90deg,rgba(34,35,37,.8),rgba(34,35,37,0));
+                }
+                .web-development {
+                    background: url(https\:\/\/fiverr-res\.cloudinary\.com\/image\/upload\/q_auto\,f_auto\/v1\/attachments\/generic_asset\/asset\/94985bf76f08de0520209ed6e758e175-1590411088742\/Banners_LIHP_Digital_Store\.jpg) 100% 100%, linear-gradient(90deg,rgba(34,35,37,.8),rgba(34,35,37,0));
+                }
+                .owl-dots {
+                    position: absolute;
+                    bottom: 20px;
+                    left: 30px;
+                    .owl-dot {
+                        span {
+                            background-color: $color-grey-4;
+                        }
+                        &.active {
+                            span {
+                                background-color: $color-white-0;
+                            }
+                        }
+                        &:focus {
+                            outline: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

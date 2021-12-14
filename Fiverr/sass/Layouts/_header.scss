@@ -1,0 +1,133 @@
+header {
+    .fiverrNavBar {
+        .navbar-toggler {
+            outline: none;
+            i {
+                font-size: $fs-2;
+                color: $color-grey-0;
+            }
+        }
+        .fiverrNavBar__left {
+            .navbar-brand {
+                flex-grow: 2;
+            }
+            .fiverrNavBar__form-search {
+                flex-grow: 8;
+                .form-control {
+                    padding-left: $pd-3;
+                    height: 35px;
+                    &:focus {
+                        box-shadow: none;
+                        border-color: $color-grey-7;
+                    }
+                }
+                i {
+                    position: absolute;
+                    z-index: 5;
+                    top: 10px;
+                    left: 8px;
+                    color: $color-grey-2 + 3;
+                }
+                .input-group-text {
+                    @include style-button($color-white-0, $color-green-0, $fs-0, $fw-1, 0, $pd-1, $border-radius-0, $color-green-0);
+                    border-top-left-radius: 0;
+                    border-bottom-left-radius: 0;
+                    cursor: pointer;
+                }
+            }
+        }
+        .fiverrNavBar__right {
+            .navbar-nav {
+                .nav-link {
+                    @include style-text($color-grey-2, $fs-0, $fw-2);
+                    padding-right: $pd-0 + 5;
+                    padding-left: $pd-0 + 5;
+                    &:hover {
+                        color: $color-green-0;
+                    }
+                }
+                .nav-item {
+                    &:first-child {
+                        a {
+                            color: $color-green-2;
+                        }
+                    }
+                    &:last-of-type {
+                        a {
+                            color: $color-green-0;
+                        }
+                    }
+                }
+            }
+        }
+        .fiverrNavBar__avatar {
+            position: relative;
+            &::before {
+                content: "";
+                display: block;
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                background-color: $color-green-0;
+                position: absolute;
+                top: 12%;
+                right: 0;
+                border: 1px solid $color-grey-3;
+            }
+            img {
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                margin-top: $mg-2;
+            }
+        }
+    }
+    @media screen and (max-width: 1170px) {
+        .fiverrNavBar__right {
+            .nav-link {
+                display: none;
+            }
+            .messages, .selling {
+                display: block;
+            }
+        }
+        .fiverrNavBar__avatar {
+            &::before {
+                left: 20px;
+            }
+        }
+    }
+    @include responsive("large") {
+        .fiverrNavBar__right {
+            .nav-link {
+                display: block;
+            }
+        }
+    }
+    @include responsive("medium") {
+        .fiverrNavBar {
+            .fiverrNavBar__left {
+                .fiverrNavBar__form-search {
+                    .input-group-text {
+                        font-size: $fs-0 - 3;
+                        padding: 0 $pd-0;
+                    }
+                }
+            }
+        }
+        
+        
+    }
+    @media screen and (max-width: 414px) {
+        .fiverrNavBar {
+            .fiverrNavBar__left {
+                .fiverrNavBar__form-search {
+                    .input-group-text {
+                        font-size: $fs-0 - 5;
+                        padding: 0 $pd-0 - 3;
+                    }
+                }
+            }
+        }
+    }
+}

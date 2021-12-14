@@ -1,0 +1,23 @@
+.banner {
+    margin: $mg-4 0;
+    .fiverrCarousel__content {
+        .fiverrCarousel__right {
+            .recommendations-carousel {
+                .advertising {
+                    background: url(https\:\/\/fiverr-res\.cloudinary\.com\/image\/upload\/f_auto\,q_auto\/v1\/attachments\/generic_asset\/asset\/579aa581549375f6f765229f28786684-1614853429803\/Personal\%20Branding\.jpg) 100% 100%, linear-gradient(90deg,rgba(34,35,37,.8),rgba(34,35,37,0));
+                    
+                }
+                .brand-voice {
+                    background: url(https\:\/\/fiverr-res\.cloudinary\.com\/image\/upload\/f_auto\,q_auto\/v1\/attachments\/generic_asset\/asset\/6606be5be38e408df403ecc52797cd97-1614845806749\/Conversion\%20Rate\%20Optimization\.jpg) 100% 100%, linear-gradient(90deg,rgba(34,35,37,.8),rgba(34,35,37,0));
+                    
+                }
+                .photography {
+                    background: url(https\:\/\/fiverr-res\.cloudinary\.com\/image\/upload\/f_auto\,q_auto\/v1\/attachments\/generic_asset\/asset\/579aa581549375f6f765229f28786684-1614853429793\/Social\%20Media\.jpg) 100% 100%, linear-gradient(90deg,rgba(34,35,37,.8),rgba(34,35,37,0));
+                }
+                .web-development {
+                    background: url(https\:\/\/fiverr-res\.cloudinary\.com\/image\/upload\/f_auto\,q_auto\/v1\/attachments\/generic_asset\/asset\/457fe5bd7ee6ad1ca0a8af5477360984-1614844744690\/Facebook\%20Ads\.jpg) 100% 100%, linear-gradient(90deg,rgba(34,35,37,.8),rgba(34,35,37,0));
+                }
+            }
+        }
+    }
+}

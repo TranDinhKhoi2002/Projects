@@ -1,0 +1,82 @@
+footer {
+    margin-top: $mg-4;
+    .footer__top-content {
+        width: 95%;
+        margin: 0 auto;
+        h6 {
+            @include style-text($color-black-1, $fs-0, $fw-1);
+        }
+        .nav-link {
+            padding-left: 0;
+            color: $color-grey-2;
+        }
+    }
+    .footer__bottom {
+        width: 95%;
+        margin: 0 auto;
+        padding: $pd-2 0;
+        display: flex;
+        justify-content: space-between;
+        .footer__bottom-left {
+            svg {
+                width: 77px;
+            }
+            span {
+                @include style-text($color-grey-4, $fs-0 - 1, $fw-0);
+                margin-left: $mg-3 - 1;
+            }
+        }
+        .footer__bottom-right {
+            .footer__icon {
+                i {
+                    margin: 0 $mg-2 + 4;
+                    font-size: $fs-3 - 2;
+                }
+            }
+            .footer__languages {
+                margin: 0 $mg-0 - 4;
+            }
+            .footer__money {
+                margin: 0 $mg-0 - 4;
+            }
+            .footer__accessibility {
+                margin: 0 $mg-0 - 4;
+            }
+            span {
+                font-weight: $fw-1;
+            }
+            svg {
+                fill: $color-grey-2;
+                transition: all 0.5s;
+                &:hover {
+                    fill: $color-black-1;
+                    .circle-wrapper {
+                        stroke: $color-grey-5;
+                    }
+                    
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 840px) {
+        .footer__bottom {
+            display: block;
+            .footer__bottom-right {
+                margin-top: $mg-0;
+            }
+        }
+    }
+    @media screen and (max-width: 414px) {
+        .footer__bottom {
+            .footer__bottom-right {
+                .footer__icon {
+                    i {
+                        margin: 0 $mg-2;
+                        font-size: $fs-3 - 5;
+                    }
+                }
+            }
+        }
+        
+    }
+}

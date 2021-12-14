@@ -1,0 +1,26 @@
+#search-area {
+    @media screen and (max-width: 1200px) {
+        & {
+            padding: $pd-2 $pd-3;
+        }
+        input {
+            width: 80%;
+        }
+    }
+    @media screen and (min-width: 1200px) and (max-width: 1300px) {
+        input {
+            width: 85%;
+        }
+    }
+}
+
+#search-footer {
+    @media screen and (max-width: 1300px) {
+        div {
+            width: 85%;
+            input {
+                width: 75%;
+            }
+        }
+    }
+}

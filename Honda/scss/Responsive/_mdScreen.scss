@@ -1,0 +1,167 @@
+#navbar {
+    @media screen and (max-width: 992px) {
+        a {
+            padding: $pd-2;
+            font-size: 15px;
+        }
+        
+        .nav-item .nav-link {
+            padding: $pd-2;
+            
+        }
+        a:first-child {
+            padding:  0;
+        }
+        .navbar-item {
+            &:nth-child(2) {
+                .nav-link {
+                    padding-top: $pd-2;
+                }
+            }
+        }
+    }
+}
+#search-area {
+    @media screen and (max-width: 992px) {
+        & {
+            padding: $pd-2 $pd-1;
+        }
+        input {
+            width: 78%;
+        }
+    }
+}
+#swiper-slider {
+    @media screen and (max-width: 992px) {
+        height: 600px;
+        margin-top: $mg-4;
+        .swiper {
+            height: 400px;
+        }
+        .swiper-wrapper {
+            height: 90%;
+        }
+    }
+}
+.intro {
+    .intro-container {
+        .intro-right {
+            @media screen and (max-width: 992px) {
+                background-image: url(../../img/intro-2-xs.jpg);
+                .intro-right-content {
+                    width: 80%;
+                    left: 10%;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+// OUR VEHICLES
+#our-vehicles {
+    .carousel-caption-config {
+        @media screen and (max-width: 992px) {
+            width: 35%;
+            left: 8%;
+            margin: auto;
+            top: 10%;
+            font-size: $font-size-1 - 0.2;
+            img {
+                width: 100%;
+            }
+            .carousel-caption-detail {
+                .carousel-detail-content {
+                    h2 {
+                        font-size: $font-size-3;
+                    }
+                    p {
+                        font-size: $font-size-1 - 0.4;
+                    }
+                }
+            }
+        }
+    }
+    .carousel-indicators-config {
+        @media screen and (max-width: 992px) {
+            width: 100% !important;
+        }
+    }
+    .carousel-caption-footer {
+        @media screen and (max-width: 992px) {
+            width: 50%;
+            border: none;
+            bottom: 16%;
+        }
+    }
+    .carousel-control-next,
+    .carousel-control-prev {
+        i {
+            @media screen and (max-width: 992px) {
+                font-size: $font-size-3;
+                padding: $pd-2;
+            }
+        }
+    }
+    .carousel-control-next {
+        @media screen and (max-width: 992px) {
+            right: 0;
+        }
+    }
+    .carousel-control-prev {
+        @media screen and (max-width: 992px) {
+            left: 0;
+        }
+    }
+    @media screen and (max-width: 992px) {
+        .carousel-indicators-xs {
+            position: absolute;
+            top: 0;
+            left: 20%;
+            z-index: 9;
+        }
+        .carousel-inner {
+            top: 0;
+        }
+        > h1 {
+            font-size: $font-size-6;
+        }
+    }
+    // DISCOVER HONDA
+    @media screen and (max-width: 992px) {
+        #discover {
+            h1 {
+                font-size: $font-size-6;
+            }
+            
+        }
+    }
+}
+
+
+
+
+// SEARCH FOOTER
+#search-footer {
+    @media screen and (max-width: 992px) {
+        padding: 0 $pd-2;
+        flex-wrap: wrap;
+        div {
+            width: 75%;
+            border-right: $border-2;
+            input {
+                width: 65%;
+            }
+            .btn-search {
+                @include button($color-blue-100, $color-white, $color-blue-100, $pd-1 $pd-2, $color-blue-100, $color-white)
+            }
+        }
+        p {
+            text-align: center;
+        }
+    }
+}

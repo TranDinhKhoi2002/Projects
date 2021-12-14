@@ -1,0 +1,27 @@
+@mixin arrow($left, $right) {
+    content: "";
+    border-bottom: 15px solid white;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    position: absolute;
+    top: -15px;
+    left: $left;
+    right: $right;
+}
+
+// PADDING
+@mixin section-padding() {
+    padding: 0 $pd-8;
+}
+
+// SOCIAL MEDIA ICON
+@mixin social-media-icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    font-size: $font-size-1;
+    text-align: center;
+    line-height: 30px;
+    background-color: $color-blue-100;
+    color: $color-white;
+}

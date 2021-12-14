@@ -1,0 +1,45 @@
+@mixin button($border, $bg, $color, $padding, $bg-hover, $color-hover) {
+    border: 2px solid $border;
+    border-radius: 40px;
+    background-color: $bg;
+    color: $color;
+    padding: $padding;
+    font-weight: $font-weight-bold;
+    font-size: $font-size-1;
+    &:hover {
+        background-color: $bg-hover;
+        color: $color-hover;
+    }
+}
+
+.btn-vehicles {
+    @include button($color-blue-200, $color-blue-200, $color-white, $pd-1 $pd-5, $color-white, $color-blue-100);
+    margin-right: $mg-1;
+}
+.btn-vehicles-active {
+    @include button($color-blue-200, $color-white, $color-blue-100, $pd-1 $pd-5, $color-blue-200, $color-white)
+}
+.btn-search {
+    @include button($color-blue-200, transparent, $color-blue-100, $pd-1 $pd-5, $color-blue-200, $color-white);
+    margin-bottom: $mg-1 + 5;
+    @media screen and (max-width: 768px) {
+        @include button($color-white, transparent, $color-white, $pd-1 - 2 $pd-2, $color-white, $color-blue-200);
+        margin-top: $mg-1 + 5;
+    }
+}
+.btn-orange {
+    @include button($color-orange, $color-orange, $color-white, $pd-1 $pd-2, $color-white, $color-orange);
+}
+.btn-go {
+    @include button($color-blue-200, $color-blue-200, $color-white, $pd-1 $pd-2, transparent, $color-blue-200);
+}
+.btn-build {
+    @include button($color-white, transparent, $color-white, $pd-1 $pd-2, $color-white, $color-blue-100);
+}
+.btn-caption {
+    padding: $pd-1 $pd-4;
+    @media screen and (max-width: 576px) {
+        font-size: $font-size-1 - 0.4;
+        padding: $pd-1 $pd-3;
+    }
+}

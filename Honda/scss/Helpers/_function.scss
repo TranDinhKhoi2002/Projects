@@ -1,0 +1,84 @@
+@each $stt, $bg-color in (1, #556371) (2, #777777) (3, #3258a6) (4, #cec9c6) (5, #929292) (6, #848484) {
+    #img-#{$stt} {
+        background: linear-gradient(#bbbdc0, $color-grey, $color-grey);
+    }
+    .vehicles-product:hover > #img-#{$stt} {
+        background: linear-gradient($bg-color, $color-grey, $color-grey);
+    }
+}
+@for $i from 1 through 31 {
+    .delay-#{$i} {
+        animation-delay: 0.1s * $i;
+    }
+}
+// LOAD BACKGROUND-IMG FOR CAROUSEL
+@each $stt, $img in (1, banner-1) (2, banner-2) (3, banner-3) (4, banner-4) {
+    #swiper-slider {
+        .slide-#{$stt} {
+            background-image: url("../../img/#{$img}.jpg");
+            background-position: center center;
+            background-size: cover;
+            @media screen and (max-width: 768px) {
+                background-image: url("../../img/#{$img}-xs.jpg");
+                background-size: cover;
+                background-position: unset;
+            }
+            @media screen and (max-width: 576px) {
+                background-image: url("../../img/#{$img}-xs.jpg");
+                background-position: center center;
+                background-size: cover;
+            }
+        }
+    }
+}
+
+
+// LOAD BACKGROUND FOR OUR VEHICLES
+@each $stt, $img in (1, slider-1) (2, slider-2) (3, slider-3) (4, slider-4) (5, slider-5) {
+    .carousel-inner {
+        .item-#{$stt} {
+            background-image: url('../../img/#{$img}.jpg');
+            background-position: center center;
+            background-size: cover;
+            @media screen and (max-width: 768px) {
+                background-image: url("../../img/#{$img}-xs.jpg");
+                background-size: cover;
+                background-position: unset;
+            }
+            @media screen and (max-width: 576px) {
+                background-image: url("../../img/#{$img}-xs.jpg");
+                background-position: center center;
+                background-size: cover;
+            }
+        }
+    }
+}
+
+// LOAD BACKGROUND FOR SERVICES ITEMS
+@each $stt, $img in (1, item-1) (2, item-2) (3, item-3) (4, item-4) {
+    .services-item-#{$stt} {
+        background-image: url('../../img/#{$img}.jpg');
+        background-position: center 0;
+        background-size: 120%;
+        background-repeat: no-repeat;
+        background-color: $color-white;
+        @media screen and (max-width: 576px) {
+            background-size: 100%;
+            background-position: center -2rem;
+        }
+        @media screen and (min-width: 768.98px) and (max-width: 992px) {
+            background-size: 150%;
+        }
+    }
+}
+
+// LOAD BACKGROUND IMG FOR DISCOVER HONDA
+@each $stt, $img in (1, discover-1) (2, discover-2) (3, discover-3) (4, discover-4) (5, discover-5) {
+    .discover-item-#{$stt} {
+        background-image: url('../../img/#{$img}.jpg');
+        background-position: center 0;
+        background-size: 120%;
+        background-repeat: no-repeat;
+        background-color: $color-white;
+    }
+}

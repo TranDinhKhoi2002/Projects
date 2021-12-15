@@ -1,5 +1,3 @@
-
-
 const swiper = new Swiper('.swiper', {
     // Optional parameters
     centeredSlides: true,
@@ -208,4 +206,17 @@ $('.back-to-top').click(function() {
     $('body, html').animate({
         scrollTop: 0
     }, 1000)
+})
+
+// COLLAPSE FOOTER
+$(window).resize(function() {
+    var width = $(window).width() + 17
+    console.log(width)
+    $('.footer-collapse').toggleClass('collapse', width < 767.98)
+})
+
+$(document).ready(function() {
+    var width = $(window).width()
+    console.log(width)
+    $('.footer-collapse').toggleClass('collapse', width < 767.98)
 })

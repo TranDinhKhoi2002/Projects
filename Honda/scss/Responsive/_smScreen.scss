@@ -167,7 +167,7 @@
             border-right: none;
             padding: $pd-1 $pd-3;
             input {
-                width: 80%;
+                width: 70%;
             }
             .btn-search {
                 @include button($color-blue-100, $color-white, $color-blue-100, $pd-1 $pd-2, $color-blue-100, $color-white)
@@ -176,6 +176,50 @@
         p {
             padding: $pd-2;
             text-align: center;
+        }
+    }
+}
+
+// FOOTER
+#footer {
+    @media screen and (max-width: 768px) {
+        background-color: $color-white;
+        padding: 0;
+        .footer-detail {
+            width: 100%;
+            h1 {
+                font-size: $font-size-1;
+                background-color: $color-grey;
+                padding: $pd-3 $pd-2;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: $mg-1 - 2;
+                i {
+                    @include social-media-icon;
+                    background-color: transparent;
+                    border: $border-1;
+                    color: $color-blue-200;
+                    cursor: pointer;
+                }
+            }
+            ul {
+                padding-left: $pd-3;
+            }
+        }
+        .footer-contact {
+            .contact-left, .contact-right {
+                width: 100%;
+                text-align: left;
+                padding: $pd-2;
+            }
+            .btn-search {
+                color: $color-blue-200;
+                border-color: $color-blue-100;
+                &:hover {
+                    color: $color-white;
+                    background-color: $color-blue-100;
+                }
+            }
         }
     }
 }

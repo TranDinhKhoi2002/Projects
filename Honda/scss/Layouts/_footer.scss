@@ -24,6 +24,7 @@
         margin-top: $mg-3;
         border-top: $border-2;
         padding: $pd-3 0;
+        flex-wrap: wrap;
         .contact-left {
             i {
                 @include social-media-icon;
@@ -39,6 +40,46 @@
             button {
                 margin-bottom: 0;
             }
+        }
+    }
+}
+
+#copyright {
+    background-color: $color-blue-100;
+    @include section-padding;
+    padding-top: $pd-2;
+    padding-bottom: $pd-2;
+    .copyright-left {
+        p {
+            font-size: $font-size-1;
+            color: $color-grey;
+            a {
+                text-decoration: underline;
+                font-style: italic;
+                color: $color-grey;
+            }
+        }
+    }
+    .copyright-right {
+        ul {
+            li {
+                padding: 0 $pd-2;
+                border-left: $border-3;
+                &:first-of-type {
+                    border-left: 0;
+                }
+                a {
+                    color: $color-grey;
+                    font-size: $font-size-1;
+                }
+            }
+        }
+    }
+    .footer-logo {
+        margin-top: $mg-3;
+        img {
+            max-width: 50%;
+            height: 4rem;
         }
     }
 }

@@ -32,6 +32,12 @@ const App = () => {
       return [expense, ...prevExpenses];
     });
   };
+
+  const deleteExpenseHandler = (id) => {
+    setExpenses((prevExpenses) => {
+      return prevExpenses.filter((expense) => expense.id !== id);
+    });
+  };
   // return React.createElement(
   //   "div",
   //   {},
@@ -42,7 +48,10 @@ const App = () => {
   return (
     <div>
       <NewExpense onAddExpense={addExpenseHandler} />
-      <Expenses items={expenses}></Expenses>
+      <Expenses
+        items={expenses}
+        onDeleteExpense={deleteExpenseHandler}
+      ></Expenses>
     </div>
   );
 };

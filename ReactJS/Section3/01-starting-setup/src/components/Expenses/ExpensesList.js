@@ -10,6 +10,10 @@ const ExpensesList = (props) => {
     props.onDeleteExpense(id);
   };
 
+  const editExpenseHandler = (edittedExpense) => {
+    props.onEditExpense(edittedExpense);
+  };
+
   return (
     <ul className="expenses-list">
       {props.items.map((item) => {
@@ -21,6 +25,7 @@ const ExpensesList = (props) => {
             date={item.date}
             id={item.id}
             onDeleteExpense={deleteExpenseHandler}
+            onEditExpense={editExpenseHandler}
           />
         );
       })}

@@ -20,6 +20,10 @@ const Expenses = (props) => {
     props.onDeleteExpense(id);
   };
 
+  const editExpenseHandler = (edittedExpense) => {
+    props.onEditExpense(edittedExpense);
+  };
+
   return (
     <div>
       <Card className="expenses">
@@ -31,6 +35,7 @@ const Expenses = (props) => {
         <ExpensesList
           items={filteredExpenses}
           onDeleteExpense={deleteExpenseHandler}
+          onEditExpense={editExpenseHandler}
         />
       </Card>
     </div>

@@ -38,6 +38,20 @@ const App = () => {
       return prevExpenses.filter((expense) => expense.id !== id);
     });
   };
+
+  const editExpenseHandler = (edittedExpense) => {
+    console.log(edittedExpense);
+    setExpenses((prevExpenses) => {
+      const index = prevExpenses.findIndex(
+        (expense) => expense.id === edittedExpense.id
+      );
+      const expensesAfterEdit = [...prevExpenses];
+      expensesAfterEdit[index].title = edittedExpense.title;
+      expensesAfterEdit[index].amount = edittedExpense.amount;
+      expensesAfterEdit[index].date = edittedExpense.date;
+      return expensesAfterEdit;
+    });
+  };
   // return React.createElement(
   //   "div",
   //   {},
@@ -51,6 +65,7 @@ const App = () => {
       <Expenses
         items={expenses}
         onDeleteExpense={deleteExpenseHandler}
+        onEditExpense={editExpenseHandler}
       ></Expenses>
     </div>
   );

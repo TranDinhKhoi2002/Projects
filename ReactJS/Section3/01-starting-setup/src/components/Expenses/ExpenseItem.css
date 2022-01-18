@@ -35,6 +35,59 @@
   border-radius: 12px;
 }
 
+.edit-expense__controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.edit-expense__control label {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  display: block;
+  color: white;
+}
+
+.edit-expense__control input {
+  font: inherit;
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  width: 15rem;
+  max-width: 100%;
+}
+
+/* .edit-expense__buttons button{
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  background-color: rgb(133, 59, 59);
+  border: 1px solid white;
+  padding: 0.5rem;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.edit-expense__buttons button:first-child {
+  margin-right: 1rem;
+}
+
+.edit-expense__buttons button:last-child {
+  background-color: rgb(33, 100, 33);
+} */
+
+.button {
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  border: 1px solid white;
+  padding: 0.5rem;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
 @media (min-width: 580px) {
   .expense-item__description {
     flex-direction: row;
@@ -47,7 +100,7 @@
     font-size: 1.25rem;
   }
 
-  .expense-item__price {
+  .expense-item__price, .button {
     font-size: 1.25rem;
     padding: 0.5rem 1.5rem;
   }
